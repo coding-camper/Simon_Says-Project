@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Simon Says</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+</head>
+<body>
+<div class="container text-center">
+<h1>Simon Game </h1>
+  
+<div class="row center-text" style="padding-top: 100px">
+  <div class="col-md-3"> 
+    <h2 id ="winneralert"></h2>
+    <audio id ="btn1" src ="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></audio>
+    <audio id ="btn2" src ="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></audio>
+    <audio id ="btn3" src ="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></audio>
+    <audio id ="btn4" src ="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></audio>
+    <audio id ="wmove" src ="http://www.wavsource.com/snds_2017-09-17_1751672946049674/sfx/floop2_x.wav"></audio>
+    <audio id ="strictwm" src ="http://www.wavsource.com/snds_2017-09-17_1751672946049674/sfx/zag_x.wav"></audio>
+    <audio id="winner" src ="http://www.wavsource.com/snds_2017-09-17_1751672946049674/sfx/drum_roll_y.wav"></audio>
+  </div>
+  <div class="col-md-3">
+  <div class="round text-center"> 
+    <div class="mid-circ"><h1>Simon</h1>
+    <div class="wrapper">
+      <div class="row">
+        <div class="col-xs-4">
+        <h2><span class="label label-default countV" id=trckCnt>&emsp;</span></h2>
+        <p> COUNT </p>
+        </div>
+      
+      <div class="col-xs-4">
+        <button id ="start"></button>
+        <p> START </p>
+      </div>
+       <div class="col-xs-4">
+         <div id="strictStatus"></div>
+        <button id ="strict"></button>
+        <p> STRICT </p>
+      </div> 
+        
+      </div>
+  </div>   
+  <div><input id='switchEvent' type="checkbox" data-toggle="toggle" data-size="mini" data-onstyle="success" data-offstyle="danger"></div>
+    
+    </div>
+    <button class="r-btn" id="1"></button>
+    <button class="g-btn" id="2"></button>
+    <button class="y-btn" id="3"></button>
+     <button class="b-btn" id="4"></button>
+   
+   </div><!-- end of circle-->
+  </div>
+  <div class="col-md-3"></div>
+  </div>  
+</div>
+
+<footer class="footer text-center" style="padding-top: 50px"> 
+ Prepared by Sujata M.
+</footer>
+</body>
+</html>
